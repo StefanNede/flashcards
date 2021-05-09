@@ -1,4 +1,6 @@
 import '../styles/globals.css'
+import "../styles/footer.css"
+import "../styles/landing.css"
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
