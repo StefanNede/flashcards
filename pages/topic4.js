@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from "next/Link"
+import Flashcard from "./Flashcard"
 
 export default function topic1() {
     return (
@@ -10,12 +11,7 @@ export default function topic1() {
                 </Link>
                 <h3 className="title">Malnutrition</h3>
             </div>
-            <div className="flashcard">question</div>
-            <div className="options">
-                <button className="previous option-button">previous</button>
-                <button className="turn-over option-button">see back</button>
-                <button className="next option-button">next</button>
-            </div>
+            <Flashcard />
         </div>
     )
 }
