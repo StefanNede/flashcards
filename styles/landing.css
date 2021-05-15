@@ -28,26 +28,8 @@
   font-size: calc(0.5rem + 2vw);
 }
 
-.sub-section-1 {
-  height: 100%;
-  justify-content: space-around;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.sub-section-2 {
-  height: 100%;
-  justify-content: space-around;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
+.sub-section-1,
+.sub-section-2,
 .sub-section-3 {
   height: 100%;
   justify-content: space-around;
@@ -56,4 +38,31 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+}
+
+/* mobile view */
+@media only screen and (max-width: 450px) {
+  .landing {
+    height: 100%;
+  }
+  .landing-title {
+    margin-top: 2.5vh;
+  }
+  .topics {
+    flex-direction: column;
+    height: 90vh;
+    margin-bottom: 2.5vh;
+  }
+  .sub-section-1,
+  .sub-section-2,
+  .sub-section-3 {
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
