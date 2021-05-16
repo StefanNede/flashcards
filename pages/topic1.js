@@ -1,13 +1,15 @@
 import React, {useEffect, useState} from 'react'
-import Link from "next/Link"
+import Link from "next/Link";
 import Flashcard from "./Flashcard";
-const axios = require('axios')
+const axios = require('axios');
+
+const endpoint = "http://localhost:3001/set1";
 
 export default function topic1() {
     const [cardPosition, setCardPosition] = useState(0);
     const [data, setData] = useState("");
     useEffect(() => {
-        axios.get('http://localhost:3001/set1')
+        axios.get(endpoint)
         .then(function (response) {
             // get data
             setData(JSON.stringify(response.data));
@@ -17,9 +19,6 @@ export default function topic1() {
             console.log(error);
         })
     }, [])
-    // if (data !== "") {
-    //     console.log(JSON.parse(data))
-    // }
     return (
         <div style={{display: 'flex',height:'90vh', flexDirection:'column', alignItems:'center', justifyContent:'space-around'}}>
             <div className="title-part">
