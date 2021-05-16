@@ -4,6 +4,7 @@ import Flashcard from "./Flashcard";
 const axios = require('axios')
 
 export default function topic1() {
+    const [cardPosition, setCardPosition] = useState(0);
     const [data, setData] = useState("");
     useEffect(() => {
         axios.get('http://localhost:3001/set1')
@@ -16,6 +17,9 @@ export default function topic1() {
             console.log(error);
         })
     }, [])
+    // if (data !== "") {
+    //     console.log(JSON.parse(data))
+    // }
     return (
         <div style={{display: 'flex',height:'90vh', flexDirection:'column', alignItems:'center', justifyContent:'space-around'}}>
             <div className="title-part">
@@ -24,7 +28,7 @@ export default function topic1() {
                 </Link>
                 <h3 className="title">Oral nutrition</h3>
             </div>
-            <Flashcard />
+            {data!== "" ? <Flashcard lengthOfData = {JSON.parse(data).data.length} front={JSON.parse(data).data[cardPosition].front} back={JSON.parse(data).data[cardPosition].back} cardPosition = {cardPosition} setCardPosition = {setCardPosition} /> : <p>Loading...</p>}
         </div>
     )
 }
