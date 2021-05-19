@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-
+import ProgressBar from "./ProgressBar";
 export default function Flashcard( {lengthOfData, front, back ,cardPosition, setCardPosition} ) {
     const [onBack, setOnBack] = useState(false);
+    const [showProgressBar, setShowProgressBar] = useState(false);
     function changeSide() {
         if (onBack) {
             setOnBack(false);
@@ -26,6 +27,8 @@ export default function Flashcard( {lengthOfData, front, back ,cardPosition, set
     }
     return (
         <>
+            {showProgressBar ? <ProgressBar cardPosition={cardPosition} lengthOfData={lengthOfData} /> : <></>}
+            <button className="show-progress-bar" onClick = {() => setShowProgressBar(!showProgressBar)}>{showProgressBar ? "hide " : "show "} progress bar</button>
             <div className={onBack ? "onBack flashcard" : "flashcard"}>
                 <p className={onBack ? "pOnBack" : ""}>{onBack ? back : front}</p>
             </div>
