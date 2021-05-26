@@ -31,4 +31,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 Flashcard fullstack app
 
 Frontend: react with next js
+
 Backend: node js with express
