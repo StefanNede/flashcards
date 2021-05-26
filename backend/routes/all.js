@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const set1 = require("../data/set1.json");
+const all = require("../data/all.json");
 
 router.get('/', (req,res) => {
-    res.send(set1)
+    res.send(all)
 })
 
 module.exports = router;

@@ -10,6 +10,12 @@
   font-size: calc(1.9rem + 2vw);
 }
 
+.all-selection {
+  width: 80vw;
+  margin-left: 15vw;
+  margin-top: 5vh;
+}
+
 .topics {
   display: flex;
   width: 100vw;
@@ -47,6 +53,10 @@
   }
   .landing-title {
     margin-top: 2.5vh;
+  }
+  .all-selection {
+    width: 100vw;
+    margin-left: 20vw;
   }
   .topics {
     flex-direction: column;

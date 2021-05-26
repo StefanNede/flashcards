@@ -5,6 +5,11 @@ export default function Landing() {
     return (
         <div className="landing">
             <h1 className="landing-title">Flashcards</h1>
+            <div className="all-selection">
+                <Link href="/all">
+                    <button className="topic-button">All flashcards</button>
+                </Link>
+            </div>
             <div className="topics">
                 <div className="sub-section-1">
                     <Link href="/topic1">

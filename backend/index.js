@@ -11,7 +11,10 @@ app.get('/', (req,res) => {
 })
 
 // middleware
-const set1Routes = require("./routes/set1");
-app.use('/set1', set1Routes);
+const allRoutes = require("./routes/all");
+app.use('/all', allRoutes);
+const set4Routes = require("./routes/set4");
+app.use('/set4', set4Routes);
+
 
 app.listen(3001, () => console.log("listening at port 3001"));

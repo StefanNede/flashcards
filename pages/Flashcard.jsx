@@ -19,18 +19,20 @@ export default function Flashcard( {lengthOfData, front, back ,cardPosition, set
         }
         else {
             setCardPosition(--cardPosition % lengthOfData);
+            setOnBack(false);
         }
     }
     function moveForward() {
         console.log(cardPosition)
         setCardPosition(++cardPosition % lengthOfData);
+        setOnBack(false);
     }
     return (
         <>
             {showProgressBar ? <ProgressBar cardPosition={cardPosition} lengthOfData={lengthOfData} /> : <></>}
             <button className="show-progress-bar" onClick = {() => setShowProgressBar(!showProgressBar)}>{showProgressBar ? "hide " : "show "} progress bar</button>
             <div className={onBack ? "onBack flashcard" : "flashcard"}>
-                <p className={onBack ? "pOnBack" : ""}>{onBack ? back : front}</p>
+                <p className={onBack ? "pOnBack" : ""}>{onBack ? back.map((backStuff) => <div>{backStuff}</div>) : front}</p>
             </div>
             <div className="options">
                 <button className="previous option-button" onClick={moveBack}>previous</button>

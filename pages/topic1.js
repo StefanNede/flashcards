@@ -2,8 +2,7 @@ import React, {useEffect, useState} from 'react'
 import Link from "next/Link";
 import Flashcard from "./Flashcard";
 const axios = require('axios');
-
-const endpoint = "http://localhost:3001/set1";
+const endpoint = "https://fiverr1.stefannede.repl.co/set1";
 
 export default function topic1() {
     const [cardPosition, setCardPosition] = useState(0);
@@ -27,7 +26,7 @@ export default function topic1() {
                 </Link>
                 <h3 className="title">Oral nutrition</h3>
             </div>
-            {data!== "" ? <Flashcard lengthOfData = {JSON.parse(data).data.length} front={JSON.parse(data).data[cardPosition].front} back={JSON.parse(data).data[cardPosition].back} cardPosition = {cardPosition} setCardPosition = {setCardPosition} /> : <p>Loading...</p>}
+            {data!== "" ? <Flashcard lengthOfData = {JSON.parse(data).data.length} front={JSON.parse(data).data[cardPosition].front} back={JSON.parse(data).data[cardPosition].back} cardPosition = {cardPosition} setCardPosition = {setCardPosition} /> : <p>Loading... (deck might be empty)</p>}
         </div>
     )
 }
