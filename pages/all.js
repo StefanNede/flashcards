@@ -24,7 +24,7 @@ export default function topic1() {
                 <Link href="/">
                     <button className="exit">exit</button>
                 </Link>
-                <h3 className="title">Oral nutrition</h3>
+                <h3 className="title">All flashcards</h3>
             </div>
             {data!== "" ? <Flashcard lengthOfData = {JSON.parse(data).data.length} front={JSON.parse(data).data[cardPosition].front} back={JSON.parse(data).data[cardPosition].back} cardPosition = {cardPosition} setCardPosition = {setCardPosition} /> : <p>Loading...</p>}
         </div>
