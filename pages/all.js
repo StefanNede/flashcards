@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import Link from "next/Link";
+import Link from "next/link";
 import Flashcard from "./Flashcard";
 const axios = require('axios');
 const endpoint = "https://fiverr1.stefannede.repl.co/all";
