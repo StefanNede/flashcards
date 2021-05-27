@@ -4,22 +4,28 @@
             "category": "malnutrition",
             "front": "Explain the concept of malnutrition by considering the most important information",
             "options": "",
-            "back": ["A condition resulting from the lack of absorption or the lack of consumption of nutritional substances, leading to a change in body composition, physical and mental impairment of the body’s function, and adversely affecting the outcome of treatment of the underlying disease"]
+            "frontImage":"",
+            "back": ["A condition resulting from the lack of absorption or the lack of consumption of nutritional substances, leading to a change in body composition, physical and mental impairment of the body’s function, and adversely affecting the outcome of treatment of the underlying disease"],
+            "backImage":""
         },
         {
             "category": "malnutrition",
             "front": "Patients who are seriously overweight or obese are most often accompanied by malnutrition of the Kwashiorkor type.",
+            "frontImage":"",
             "options": [
                 "true",
                 "false"
             ],
-            "back": ["true"]
+            "back": ["true"],
+            "backImage":""
         },
         {
             "category": "malnutrition",
             "front": "List 3 types of malnutrition",
+            "frontImage":"",
             "options": "",
-            "back": ["Marasmus malnutrition (protein-caloric malnutrition)","Kwashiorkor malnutrition (protein malnutrition)", "Mixed malnutrition"]
+            "back": ["Marasmus malnutrition (protein-caloric malnutrition)","Kwashiorkor malnutrition (protein malnutrition)", "Mixed malnutrition"],
+            "backImage":""
         }
     ]
 }

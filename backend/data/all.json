@@ -4,22 +4,36 @@
             "category": "malnutrition",
             "front": "Explain the concept of malnutrition by considering the most important information",
             "options": "",
-            "back": ["A condition resulting from the lack of absorption or the lack of consumption of nutritional substances, leading to a change in body composition, physical and mental impairment of the body’s function, and adversely affecting the outcome of treatment of the underlying disease"]
+            "frontImage":"",
+            "back": ["A condition resulting from the lack of absorption or the lack of consumption of nutritional substances, leading to a change in body composition, physical and mental impairment of the body’s function, and adversely affecting the outcome of treatment of the underlying disease"],
+            "backImage":""
         },
         {
             "category": "malnutrition",
             "front": "Patients who are seriously overweight or obese are most often accompanied by malnutrition of the Kwashiorkor type.",
+            "frontImage":"",
             "options": [
                 "true",
                 "false"
             ],
-            "back": ["true"]
+            "back": ["true"],
+            "backImage":""
         },
         {
             "category": "malnutrition",
             "front": "List 3 types of malnutrition",
+            "frontImage":"",
             "options": "",
-            "back": ["Marasmus malnutrition (protein-caloric malnutrition)","Kwashiorkor malnutrition (protein malnutrition)", "Mixed malnutrition"]
+            "back": ["Marasmus malnutrition (protein-caloric malnutrition)","Kwashiorkor malnutrition (protein malnutrition)", "Mixed malnutrition"],
+            "backImage":""
+        },
+        {
+            "category": "oral nutrition",
+            "front": "Co przedstawiono na zdjęciu? (What is shown in the picture?)",
+            "options": "",
+            "frontImage": "https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/secured-attachments/message/attachments/3c2b057c495a45f9811c51f9d31b2f99-1622145360880/grafika%2018.jpg?__cld_token__=exp=1622170269~hmac=cc4296f791e05d49a6b6a8d8f0ca4dea0ec68a014bdf89a5ac558456e02ba16e",
+            "back": ["Oral nutritional supplements (DSP) or industrial oral diets (DDP)(…)"],
+            "backImage": ""
         }
     ]
 }

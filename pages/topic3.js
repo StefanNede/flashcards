@@ -26,7 +26,7 @@ export default function topic4() {
                 </Link>
                 <h3 className="title">Parenteral nutrition</h3>
             </div>
-            {data!== "" ? <Flashcard lengthOfData = {JSON.parse(data).data.length} front={JSON.parse(data).data[cardPosition].front} back={JSON.parse(data).data[cardPosition].back} cardPosition = {cardPosition} setCardPosition = {setCardPosition} /> : <p>Loading... (deck might be empty)</p>}
+            {data!== "" ? <Flashcard frontImage={JSON.parse(data).data[cardPosition].frontImage} backImage={JSON.parse(data).data[cardPosition].backImage} lengthOfData = {JSON.parse(data).data.length} front={JSON.parse(data).data[cardPosition].front} back={JSON.parse(data).data[cardPosition].back} cardPosition = {cardPosition} setCardPosition = {setCardPosition} /> : <p>Loading... (deck might be empty)</p>}
         </div>
     )
 }

@@ -33,3 +33,4 @@ Flashcard fullstack app
 Frontend: react with next js
 
 Backend: node js with express
+
