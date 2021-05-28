@@ -28,9 +28,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 # flashcards
 
+[Live Website](https://mflashcards.netlify.app)
+
 Flashcard fullstack app
 
 Frontend: react with next js
 
 Backend: node js with express
+
+### Landing:
+<img width="800" alt="Screenshot 2021-05-28 at 23 06 35" src="https://user-images.githubusercontent.com/74429608/120046135-6e23a300-c009-11eb-9bfb-535229f6c035.png">
+
+### Flashcard:
+<img width="800" alt="Screenshot 2021-05-28 at 23 08 05" src="https://user-images.githubusercontent.com/74429608/120046191-914e5280-c009-11eb-8017-3f55e457a000.png">
+
+
 
