@@ -23,7 +23,6 @@ export default function Flashcard( {frontImage, backImage ,lengthOfData, front, 
         }
     }
     function moveForward() {
-        console.log(cardPosition)
         setCardPosition(++cardPosition % lengthOfData);
         setOnBack(false);
     }
